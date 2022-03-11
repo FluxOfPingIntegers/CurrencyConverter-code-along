@@ -5,12 +5,12 @@ This is a code along I am doing in order to practice/better learn react-native. 
 ## Progress
 
 * Module 1: Getting Started
-- [ ] Introduction
-- [ ] React Native CLI vs Expo
-- [ ] Configuring Expo
-- [ ] Configuring iOS Simulator (Mac Only)
-- [ ] Configuring the Android Emulator
-- [ ] Understanding the React Native Development Environment
+- [x] Introduction
+- [x] React Native CLI vs Expo
+- [x] Configuring Expo
+- [x] Configuring iOS Simulator (Mac Only)
+- [x] Configuring the Android Emulator
+- [x] Understanding the React Native Development Environment
 - [ ] Configuring VS Code for React Native Development
 * Module 2: Project & Development Environment Configuration
 - [ ] How to Organize a React Native Project
