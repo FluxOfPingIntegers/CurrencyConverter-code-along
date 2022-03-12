@@ -15,11 +15,11 @@ This is a code along I am doing in order to practice/better learn react-native. 
 * Module 2: Project & Development Environment Configuration
 - [x] How to Organize a React Native Project
 - [x] Formatting Code with Prettier
-- [ ] Configure ESLint for Consistent Code
+- [x] Configure ESLint for Consistent Code
 * Module 3: The Basics - Building the Options Screen
-- [ ] Understanding Components
-- [ ] How to Display Icons
-- [ ] Creating a Custom Component
+- [x] Understanding Components
+- [x] How to Display Icons
+- [x] Creating a Custom Component
 - [ ] How to Make a Scrollable Screen
 - [ ] Opening Links for the App
 * Module 4: Capturing Input - Building the Home Screen
