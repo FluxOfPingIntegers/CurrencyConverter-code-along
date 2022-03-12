@@ -1,21 +1,43 @@
 import React from 'react';
-import { View, TouchableOpacity, Text, SafeAreaView } from 'react-native';
+import { View, TouchableOpacity, Text, SafeAreaView, StyleSheet } from 'react-native';
+
+import colors from '../constants/colors';
 
 export default () => {
   return (
     <SafeAreaView>
-      <TouchableOpacity>
-        <Text>Themes</Text>
-      </TouchableOpacity>
-      
-      <TouchableOpacity>
-        <Text>React Native Basics</Text>
+      <TouchableOpacity style={styles.row}>
+        <Text style ={styles.text}>Themes</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity>
-        <Text>React Native By Example</Text>
+      <View style={styles.separator} />
+      
+      <TouchableOpacity style={styles.row}>
+        <Text style ={styles.text}>React Native Basics</Text>
+      </TouchableOpacity>
+
+      <View style={styles.separator} />
+
+      <TouchableOpacity style={styles.row}>
+        <Text style ={styles.text}>React Native By Example</Text>
       </TouchableOpacity>
 
     </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create({
+  row: {
+    paddingHorizontal: 20,
+    paddingVertical: 16,
+  },
+  text: {
+    fontSize: 16,
+    color: colors.text,
+  },
+  separator: {
+    backgroundColor: colors.border,
+    height: StyleSheet.hairlineWidth,
+    marginLeft: 20,
+  },
+})
