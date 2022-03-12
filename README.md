@@ -14,7 +14,7 @@ This is a code along I am doing in order to practice/better learn react-native. 
 - [x] Configuring VS Code for React Native Development
 * Module 2: Project & Development Environment Configuration
 - [x] How to Organize a React Native Project
-- [ ] Formatting Code with Prettier
+- [x] Formatting Code with Prettier
 - [ ] Configure ESLint for Consistent Code
 * Module 3: The Basics - Building the Options Screen
 - [ ] Understanding Components
