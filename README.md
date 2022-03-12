@@ -11,7 +11,7 @@ This is a code along I am doing in order to practice/better learn react-native. 
 - [x] Configuring iOS Simulator (Mac Only)
 - [x] Configuring the Android Emulator
 - [x] Understanding the React Native Development Environment
-- [ ] Configuring VS Code for React Native Development
+- [x] Configuring VS Code for React Native Development
 * Module 2: Project & Development Environment Configuration
 - [ ] How to Organize a React Native Project
 - [ ] Formatting Code with Prettier
