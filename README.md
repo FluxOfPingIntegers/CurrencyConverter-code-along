@@ -20,8 +20,8 @@ This is a code along I am doing in order to practice/better learn react-native. 
 - [x] Understanding Components
 - [x] How to Display Icons
 - [x] Creating a Custom Component
-- [ ] How to Make a Scrollable Screen
-- [ ] Opening Links for the App
+- [x] How to Make a Scrollable Screen
+- [x] Opening Links for the App
 * Module 4: Capturing Input - Building the Home Screen
 - [ ] Home Screen Setup
 - [ ] Working with Images
