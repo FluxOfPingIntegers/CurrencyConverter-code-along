@@ -25,7 +25,7 @@ This is a code along I am doing in order to practice/better learn react-native. 
 * Module 4: Capturing Input - Building the Home Screen
 - [x] Home Screen Setup
 - [x] Working with Images
-- [ ] Building a Custom Input Component
+- [x] Building a Custom Input Component
 - [ ] Disabled Input State
 - [ ] Displaying and Formatting Text
 - [ ] Building a Button Component
