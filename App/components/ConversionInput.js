@@ -35,9 +35,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row'
   },
   button: {
+    backgroundColor: colors.white,
     padding: 15,
     borderRightColor: colors.border,
-    borderRightWidth: 1
+    borderRightWidth: 1,
+    borderTopLeftRadius: 5,
+    borderBottomLeftRadius: 5,
   },
   buttonText: {
     fontSize: 18,
