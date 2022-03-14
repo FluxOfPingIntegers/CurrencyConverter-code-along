@@ -8,9 +8,13 @@ export const ConversionInput = ({
   onButtonPress,
   ...props
 }) => {
-  
+  const containerStyles = [styles.container];  
+  if (props.editable === false) {
+    containerStyles.push(styles.containerDisabled)
+  }
+
   return (
-    <View style={styles.container}>
+    <View style={containerStyles}>
       <TouchableOpacity onPress={onButtonPress} style={styles.button}>
         <Text style={styles.buttonText}>{text}</Text>
       </TouchableOpacity>
@@ -39,6 +43,9 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: colors.blue,
     fontWeight: "bold"
+  },
+  containerDisabled: {
+    backgroundColor: colors.offWhite
   },
   input: {
     flex: 1,

@@ -1,7 +1,11 @@
+
+
 import React from "react";
 import { View, StyleSheet, StatusBar, Image, Dimensions } from 'react-native';
 
 import colors from "../constants/colors";
+
+
 import { ConversionInput } from "../components/ConversionInput";
 
 
@@ -33,7 +37,8 @@ export default () => {
       <ConversionInput 
         text="GBP" 
         value="123"
-        onButtonPress={() => alert("todo!")}
+        onButtonPress={() => alert("todo!")} 
+        editable={false}
       />
 
     </View>
