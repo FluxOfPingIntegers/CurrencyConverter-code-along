@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Text, View, StyleSheet, StatusBar, Image, Dimensions } from 'react-native';
+import { format } from 'date-fns';
 
 import colors from "../constants/colors";
 
@@ -10,6 +11,11 @@ import { ConversionInput } from "../components/ConversionInput";
 
 
 export default () => {
+  const baseCurrency = 'USD';
+  const quoteCurrency = 'GBP';
+  const conversionRate = 0.77;
+  const date = new Date();
+
   return (
     <View style={styles.container}>
       <StatusBar barStyle="light-content" backgroundColor={colors.blue}/>
@@ -29,7 +35,7 @@ export default () => {
       <Text style={styles.textHeader}>Currency Converter</Text>
 
       <ConversionInput 
-        text="USD" 
+        text={baseCurrency} 
         value="123"
         onButtonPress={() => alert("todo!")} 
         onChangeText={text => console.log("text", text)}
@@ -37,13 +43,15 @@ export default () => {
       />
 
       <ConversionInput 
-        text="GBP" 
+        text={quoteCurrency}
         value="123"
         onButtonPress={() => alert("todo!")} 
         editable={false}
       />
 
-      <Text style={styles.text}>1 USD = 0.77 GBP as of March 13, 2022</Text>
+      <Text style={styles.text}>
+        {`1 ${baseCurrency} = ${conversionRate} ${quoteCurrency} as of ${format(date, 'MMMM do, yyyy')}`}
+      </Text>
 
     </View>
   )
