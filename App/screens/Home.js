@@ -1,7 +1,7 @@
 
 
 import React from "react";
-import { View, StyleSheet, StatusBar, Image, Dimensions } from 'react-native';
+import { Text, View, StyleSheet, StatusBar, Image, Dimensions } from 'react-native';
 
 import colors from "../constants/colors";
 
@@ -26,6 +26,8 @@ export default () => {
         />
       </View>
 
+      <Text style={styles.textHeader}>Currency Converter</Text>
+
       <ConversionInput 
         text="USD" 
         value="123"
@@ -40,6 +42,8 @@ export default () => {
         onButtonPress={() => alert("todo!")} 
         editable={false}
       />
+
+      <Text style={styles.text}>1 USD = 0.77 GBP as of March 13, 2022</Text>
 
     </View>
   )
@@ -66,4 +70,16 @@ const styles = StyleSheet.create({
     width: screen.width * 0.25,
     height: screen.height * 0.25,
   },
+  text: {
+    color: colors.white,
+    fontSize: 14,
+    textAlign: 'center',
+  },
+  textHeader: {
+    color: colors.white, 
+    fontWeight: 'bold',
+    fontSize: 30,
+    marginVertical: 20,
+    textAlign: 'center',
+  }
 })
