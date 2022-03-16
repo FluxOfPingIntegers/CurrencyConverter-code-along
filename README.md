@@ -35,8 +35,8 @@ This is a code along I am doing in order to practice/better learn react-native. 
 * Module 5: Navigating Between Screens with React Navigation
 - [x] Installing React Navigation
 - [x] Configuring the Stack Navigator
-- [ ] How to Hide the Navigation Bar
-- [ ] How to Navigate Between Screens
+- [x] How to Hide the Navigation Bar
+- [x] How to Navigate Between Screens
 * Module 6: Building the Currency Selection Screen
 - [ ] Setting Up the Screen
 - [ ] Long Scrolling Screens the Efficient Way
