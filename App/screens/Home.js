@@ -1,7 +1,16 @@
 
 
-import React from "react";
-import { Text, View, StyleSheet, StatusBar, Image, Dimensions, ScrollView } from 'react-native';
+import React, { useState, useEffect } from "react";
+import { 
+  Text, 
+  View, 
+  StyleSheet, 
+  StatusBar, 
+  Image, 
+  Dimensions, 
+  ScrollView,
+  Keyboard,
+} from 'react-native';
 import { format } from 'date-fns';
 
 import colors from "../constants/colors";
@@ -17,9 +26,26 @@ export default () => {
   const conversionRate = 0.77;
   const date = new Date();
 
+  const [scrollEnabled, setScrollEnabled] = useState(false);
+
+  useEffect(() => {
+    const showListener = Keyboard.addListener('keyboardDidShow', () => {
+      setScrollEnabled(true);
+    });
+
+    const hideListener = Keyboard.addListener('keyboardDidHide', () => {
+      setScrollEnabled(false);
+    })
+
+    return () => {
+      showListener.remove();
+      hideListener.remove();
+    };
+  }, [])
+
   return (
     <View style={styles.container}>
-      <ScrollView>
+      <ScrollView scrollEnabled={scrollEnabled}>
         <StatusBar barStyle="light-content" backgroundColor={colors.blue}/>
           <View style={styles.content}>
           <View style={styles.logoContainer}>
