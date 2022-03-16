@@ -27,14 +27,14 @@ This is a code along I am doing in order to practice/better learn react-native. 
 - [x] Working with Images
 - [x] Building a Custom Input Component
 - [x] Disabled Input State
-- [ ] Displaying and Formatting Text
-- [ ] Building a Button Component
-- [ ] The Easy Way to Avoid the Keyboard
-- [ ] Enable Scrolling Only When the Keyboard is Open
-- [ ] How to Measure the Keyboard Height
+- [x] Displaying and Formatting Text
+- [x] Building a Button Component
+- [x] The Easy Way to Avoid the Keyboard
+- [x] Enable Scrolling Only When the Keyboard is Open
+- [x] How to Measure the Keyboard Height
 * Module 5: Navigating Between Screens with React Navigation
-- [ ] Installing React Navigation
-- [ ] Configuring the Stack Navigator
+- [x] Installing React Navigation
+- [x] Configuring the Stack Navigator
 - [ ] How to Hide the Navigation Bar
 - [ ] How to Navigate Between Screens
 * Module 6: Building the Currency Selection Screen
