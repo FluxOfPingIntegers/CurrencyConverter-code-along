@@ -9,4 +9,5 @@ export default {
   textLight: '#797979',
   offWhite: '#f0f0f0',
   black: '#000000',
+  purple: '#800080',
 }
