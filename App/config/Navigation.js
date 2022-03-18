@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import Home from '../screens/Home';
 import Options from '../screens/Options';
+import CurrencyList from '../screens/CurrencyList';
 
 const MainStack = createStackNavigator();
 const MainStackScreen = () => (
@@ -18,6 +19,7 @@ const MainStackScreen = () => (
       component={Options} 
       options={{ headerTitleAlign: 'center'}}  
     />
+    <MainStack.Screen name="CurrencyList" component={CurrencyList} />
   </MainStack.Navigator>
 );
 
