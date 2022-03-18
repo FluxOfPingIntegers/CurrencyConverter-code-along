@@ -8,4 +8,5 @@ export default {
   white: '#fff',
   textLight: '#797979',
   offWhite: '#f0f0f0',
+  black: '#000000',
 }
