@@ -21,9 +21,13 @@ const MainStackScreen = () => (
       component={Options} 
       options={{ headerTitleAlign: 'center'}}  
     />
-    <MainStack.Screen name="CurrencyList" component={CurrencyList} options={({ route }) => ({
-      title: route.params && route.params.title,
-    })} />
+    <MainStack.Screen 
+      name="CurrencyList" 
+      component={CurrencyList} 
+      options={({ route }) => ({
+        title: route.params && route.params.title,
+      })} 
+    />
   </MainStack.Navigator>
 );
 

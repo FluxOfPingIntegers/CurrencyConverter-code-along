@@ -5,10 +5,9 @@ import { useSafeArea } from 'react-native-safe-area-context'
 import colors from '../constants/colors';
 import currencies from '../data/currencies.json'
 import { RowItem, RowSeparator } from '../components/RowItem';
-import Navigation from '../config/Navigation';
 
 export default ({ navigation }) => {
-  const insets = useSafeArea();
+  //const insets = useSafeArea();
 
   return (
     <View style={{ backgroundColor: colors.white}}>
@@ -20,7 +19,7 @@ export default ({ navigation }) => {
         }}
         keyExtractor={(item) => item}
         ItemSeparatorComponent={() => <RowSeparator />}
-        ListFooterComponent={() => <View style={{ paddingBottom: insets.bottom}} />}
+        //ListFooterComponent={() => <View style={{ paddingBottom: insets.bottom}} />}
       />
     </View>
   );
