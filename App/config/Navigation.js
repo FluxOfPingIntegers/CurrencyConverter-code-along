@@ -9,7 +9,7 @@ import CurrencyList from '../screens/CurrencyList';
 const MainStack = createStackNavigator();
 const MainStackScreen = () => (
   <MainStack.Navigator
-    initialRouteName="CurrencyList"
+    //initialRouteName="CurrencyList"
   >
     <MainStack.Screen 
       name="Home" 
@@ -21,7 +21,9 @@ const MainStackScreen = () => (
       component={Options} 
       options={{ headerTitleAlign: 'center'}}  
     />
-    <MainStack.Screen name="CurrencyList" component={CurrencyList} />
+    <MainStack.Screen name="CurrencyList" component={CurrencyList} options={({ route }) => ({
+      title: route.params && route.params.title,
+    })} />
   </MainStack.Navigator>
 );
 
