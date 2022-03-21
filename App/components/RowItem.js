@@ -12,7 +12,7 @@ export const RowItem = ({ text, rightIcon, onPress }) => {
   )
 }
 
-export const RowSeperator = () => {
+export const RowSeparator = () => {
   return (
     <View style={styles.separator} />
   )
