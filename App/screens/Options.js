@@ -3,7 +3,7 @@ import { SafeAreaView, ScrollView, Linking, Alert, StatusBar } from 'react-nativ
 import { Entypo } from '@expo/vector-icons';
 
 import colors from '../constants/colors';
-import { RowItem, RowSeperator } from '../components/RowItem';
+import { RowItem, RowSeparator } from '../components/RowItem';
 
 
 const openUrl = url => {
@@ -26,7 +26,7 @@ export default () => {
         }
       />
 
-      <RowSeperator />
+      <RowSeparator />
       
       <RowItem
         text="React Native Basics"
@@ -36,7 +36,7 @@ export default () => {
         }
       />
 
-      <RowSeperator />
+      <RowSeparator />
 
       <RowItem
         text="React Native By Example"

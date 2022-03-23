@@ -1,6 +1,6 @@
 import React from 'react';
 import { StatusBar, FlatList, View } from 'react-native';
-import { useSafeArea } from 'react-native-safe-area-context'
+//import { useSafeArea } from 'react-native-safe-area-context'
 
 import colors from '../constants/colors';
 import currencies from '../data/currencies.json'
@@ -15,7 +15,7 @@ export default ({ navigation }) => {
       <FlatList 
         data={currencies} 
         renderItem={({ item }) =>{
-          return <RowItem text={item} onPress={() => navigation.pop()} />
+          return <RowItem title={item} onPress={() => navigation.pop()} />
         }}
         keyExtractor={(item) => item}
         ItemSeparatorComponent={() => <RowSeparator />}
