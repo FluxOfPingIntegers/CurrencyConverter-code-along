@@ -29,7 +29,7 @@ const MainStackScreen = () => (
 
 const ModalStack = createStackNavigator();
 const ModalStackScreen = () => (
-  <ModalStack.Navigator>
+  <ModalStack.Navigator mode="modal">
     <ModalStack.Screen
       name="Main"
       component={MainStackScreen} 

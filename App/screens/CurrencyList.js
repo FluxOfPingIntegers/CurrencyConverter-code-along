@@ -15,7 +15,7 @@ export default ({ navigation }) => {
       <FlatList 
         data={currencies} 
         renderItem={({ item }) =>{
-          return <RowItem title={item} onPress={() => navigation.pop()} />
+          return <RowItem text={item} onPress={() => navigation.pop()} />
         }}
         keyExtractor={(item) => item}
         ItemSeparatorComponent={() => <RowSeparator />}

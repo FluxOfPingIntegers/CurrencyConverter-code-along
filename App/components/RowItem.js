@@ -6,7 +6,7 @@ import colors from '../constants/colors';
 export const RowItem = ({ text, rightIcon, onPress }) => {
   return (
     <TouchableOpacity style={styles.row} onPress={onPress}>
-    <Text style ={styles.text}>{text}</Text>
+    <Text style={styles.text}>{text}</Text>
     {rightIcon}
   </TouchableOpacity>
   )
