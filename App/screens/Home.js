@@ -31,51 +31,65 @@ export default ({ navigation }) => {
 
   return (
     <View style={styles.container}>
+      <StatusBar barStyle="light-content" backgroundColor={colors.blue}/>
       <ScrollView scrollEnabled={scrollEnabled}>
-        <StatusBar barStyle="light-content" backgroundColor={colors.blue}/>
           <SafeAreaView style={styles.header} >
             <TouchableOpacity onPress={() => navigation.push("Options")}>
               <Entypo name="cog" size={32} color={colors.white} />
             </TouchableOpacity>
           </SafeAreaView>
+
           <View style={styles.content}>
-          <View style={styles.logoContainer}>
-            <Image 
-              source={require('../assets/images/background.png')} 
-              style={styles.logoBackground} 
-              resizeMode="contain"
-            />
-            <Image 
-              source={require('../assets/images/logo.png')} 
-              style={styles.logo} 
-              resizeMode="contain"
-            />
+            <View style={styles.logoContainer}>
+              <Image 
+                source={require('../assets/images/background.png')} 
+                style={styles.logoBackground} 
+                resizeMode="contain"
+              />
+              <Image 
+                source={require('../assets/images/logo.png')} 
+                style={styles.logo} 
+                resizeMode="contain"
+              />
+            </View>
+    
+            <Text style={styles.textHeader}>Currency Converter</Text>
+            <View>
+              <ConversionInput 
+                text={baseCurrency} 
+                value="123"
+                onButtonPress={() => 
+                  navigation.push("CurrencyList", { 
+                    title: 'Base Currency', 
+                    activeCurrency: baseCurrency,
+                  })
+                } 
+                keyboardType="numeric"
+                onChangeText={text => console.log("text", text)}
+              />
+        
+              <ConversionInput 
+                text={quoteCurrency}
+                value="123"
+                editable={false}
+                onButtonPress={() => 
+                  navigation.push("CurrencyList", { 
+                    title: 'Quote Currency',
+                    activeCurrency: quoteCurrency,
+                  })
+                } 
+              />
           </View>
-    
-          <Text style={styles.textHeader}>Currency Converter</Text>
-    
-          <ConversionInput 
-            text={baseCurrency} 
-            value="123"
-            onButtonPress={() => navigation.push("CurrencyList", { title: 'Base Currency' })} 
-            onChangeText={text => console.log("text", text)}
-            keyboardType="numeric"
-          />
-    
-          <ConversionInput 
-            text={quoteCurrency}
-            value="123"
-            onButtonPress={() => navigation.push("CurrencyList", { title: 'Quote Currency'})} 
-            editable={false}
-          />
-    
           <Text style={styles.text}>
-            {`1 ${baseCurrency} = ${conversionRate} ${quoteCurrency} as of ${format(date, 'MMMM do, yyyy')}`}
+            {`1 ${baseCurrency} = ${conversionRate} ${quoteCurrency} as of ${format(
+              new Date(date),
+              'MMMM do, yyyy'
+            )}`}
           </Text>
     
           <Button text="Reverse Currencies" onPress={() => alert('todo!')} />
           <KeyboardSpacer 
-            onToggle={(keyboardIsVisible) => setScrollEnabled(keyboardIsVisible)} 
+            onToggle={(visible) => setScrollEnabled(visible)} 
           />
           </View>
       </ScrollView>
@@ -96,6 +110,9 @@ const styles = StyleSheet.create({
   header: {
     alignItems: 'flex-end',
     marginHorizontal: 20,
+  },
+  inputContainer: {
+    marginBottom: 10,
   },
   logoContainer: {
     alignItems: 'center',
