@@ -40,8 +40,8 @@ This is a code along I am doing in order to practice/better learn react-native. 
 * Module 6: Building the Currency Selection Screen
 - [x] Setting Up the Screen
 - [x] Long Scrolling Screens the Efficient Way
-- [ ] Displaying a Screen as a modal with React Navigation
-- [ ] Designate the Currently Seleccted Currency
+- [x] Displaying a Screen as a modal with React Navigation
+- [x] Designate the Currently Seleccted Currency
 * Module 7: Making the App Dynamic
 - [ ] Capture and Use User Input on the Home Screen
 - [ ] How to Select and Use any Currency
