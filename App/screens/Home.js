@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { 
   Text, 
   View, 
@@ -14,27 +14,26 @@ import { Entypo } from '@expo/vector-icons';
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import colors from "../constants/colors";
-
-
 import { ConversionInput } from "../components/ConversionInput";
 import { Button } from "../components/Button";
 import { KeyboardSpacer } from "../components/KeyboardSpacer";
+import { ConversionContext } from '../util/ConversionContext';
 
 
 export default ({ navigation }) => {
-  const [baseCurrency, setBaseCurrency] = useState('USD');
-  const [quoteCurrency, setQuoteCurrency] = useState('GBP');
+  const {
+    baseCurrency,
+    quoteCurrency,
+    swapCurrencies,
+    setBaseCurrency,
+    setQuoteCurrency,
+  } = useContext(ConversionContext);
   const [value, setValue] = useState('100')
 
   const conversionRate = 0.77;
   const date = new Date();
 
   const [scrollEnabled, setScrollEnabled] = useState(false);
-
-  const swapCurrencies = () => {
-    setBaseCurrency(quoteCurrency);
-    setQuoteCurrency(baseCurrency);
-  };
 
   return (
     <View style={styles.container}>
