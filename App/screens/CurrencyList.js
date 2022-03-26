@@ -28,6 +28,7 @@ export default ({ navigation, route = {} }) => {
           <RowItem 
             text={item} 
             onPress={() => {
+              onChange(item);
               navigation.pop();
             }}
             rightIcon={
