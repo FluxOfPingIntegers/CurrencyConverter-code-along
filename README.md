@@ -44,9 +44,9 @@ This is a code along I am doing in order to practice/better learn react-native. 
 - [x] Designate the Currently Seleccted Currency
 * Module 7: Making the App Dynamic
 - [x] Capture and Use User Input on the Home Screen
-- [ ] How to Select and Use any Currency
-- [ ] Simplifying Code: An Introduction to Context
-- [ ] Eliminate Warnings: Using Context on the Currency List Screen
+- [x] How to Select and Use any Currency
+- [x] Simplifying Code: An Introduction to Context
+- [x] Eliminate Warnings: Using Context on the Currency List Screen
 * Module 8: Working with an API
 - [ ] Building a Simple Local API
 - [ ] Get "Latest" Rates from the API
