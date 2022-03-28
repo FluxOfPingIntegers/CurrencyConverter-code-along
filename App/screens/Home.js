@@ -21,13 +21,8 @@ import { ConversionContext } from '../util/ConversionContext';
 
 
 export default ({ navigation }) => {
-  const {
-    baseCurrency,
-    quoteCurrency,
-    swapCurrencies,
-    setBaseCurrency,
-    setQuoteCurrency,
-  } = useContext(ConversionContext);
+  const { baseCurrency, quoteCurrency, swapCurrencies } = useContext(ConversionContext);
+
   const [value, setValue] = useState('100')
 
   const conversionRate = 0.77;
@@ -67,8 +62,7 @@ export default ({ navigation }) => {
                 onButtonPress={() => 
                   navigation.push("CurrencyList", { 
                     title: 'Base Currency', 
-                    activeCurrency: baseCurrency,
-                    onChange: (currency) => setBaseCurrency(currency),
+                    isBaseCurrency: true,
                   })
                 } 
                 keyboardType="numeric"
@@ -84,8 +78,7 @@ export default ({ navigation }) => {
                 onButtonPress={() => 
                   navigation.push("CurrencyList", { 
                     title: 'Quote Currency',
-                    activeCurrency: quoteCurrency,
-                    onChange: (currency) => setQuoteCurrency(currency),
+                    isBaseCurrency: false,
                   })
                 } 
               />
