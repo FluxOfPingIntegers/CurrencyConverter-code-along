@@ -34,6 +34,8 @@ export const ConversionContextProvider = ({ children }) => {
     setBaseCurrency,
     setQuoteCurrency,
     swapCurrencies,
+    date,
+    rates,
   };
 
   return (
