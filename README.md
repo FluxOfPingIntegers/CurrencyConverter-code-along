@@ -48,8 +48,8 @@ This is a code along I am doing in order to practice/better learn react-native. 
 - [x] Simplifying Code: An Introduction to Context
 - [x] Eliminate Warnings: Using Context on the Currency List Screen
 * Module 8: Working with an API
-- [ ] Building a Simple Local API
-- [ ] Get "Latest" Rates from the API
+- [x] Building a Simple Local API
+- [x] Get "Latest" Rates from the API
 - [ ] Get Rates on App Launch
 - [ ] Waiting for Data - Implementing a Loading State
 * Conclusion
