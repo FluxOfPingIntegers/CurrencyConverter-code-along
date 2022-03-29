@@ -6,10 +6,11 @@ import { api } from './api';
 export const ConversionContext = createContext();
 
 const DEFAULT_BASE_CURRENCY = 'USD';
+const DEFAULT_QUOTE_CURRENCY = 'GBP';
 
 export const ConversionContextProvider = ({ children }) => {
   const [baseCurrency, _setBaseCurrency] = useState(DEFAULT_BASE_CURRENCY);
-  const [quoteCurrency, setQuoteCurrency] = useState('GBP');
+  const [quoteCurrency, setQuoteCurrency] = useState(DEFAULT_QUOTE_CURRENCY);
   const [date, setDate] = useState();
   const [rates, setRates] = useState({});
 
